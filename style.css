@@ -1,0 +1,257 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #000;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* 1st row */
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #454;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main>h1{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+}
+
+#main>h1 span{
+    margin: 0 15px;
+}
+
+#main>h1 span img{
+    rotate: 360deg;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+/* 2nd row encryption decryption part */
+
+#encdec-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #450;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+#encdec-div h3 {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#encdec-div img{
+    height: 50px;
+}
+
+#encdec-div h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#enc-btn{
+    background-color: #455;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#dec-btn{
+    /* background-color: #455; */
+    border-radius: 30px;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* encryption part */
+
+#encryption{
+    margin-top: 50px;
+    width: 30%;
+    display: flex;
+    /* display: none; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#encryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+#encryption textarea{
+    height: 70px;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+}
+
+#encryption textarea::placeholder{
+    color: #000;
+    scrollbar-color: #000;
+}
+
+
+#encryption input{
+    height: 60px;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+}
+
+#encrypt-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #4545;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+}
+
+#encrypt-btn img{
+    height: 40px;
+}
+
+/* decryption part */
+
+
+#decryption{
+    margin-top: 50px;
+    width: 30%;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#decryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+#decryption textarea{
+    height: 70px;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+}
+
+#decryption textarea::placeholder{
+    color: #000;
+    scrollbar-color: #000;
+}
+
+
+#decryption input{
+    height: 60px;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+}
+
+#decrypt-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #4545;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+}
+
+#decrypt-btn img{
+    height: 40px;
+}
+
+/* result */
+
+#result{
+    height: 60px;
+    display: none;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+#result1{
+    height: 60px;
+    display: none;
+    border: 1px solid #343434;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #4545;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+
+#copyright{
+    margin-top: 30px;
+}
